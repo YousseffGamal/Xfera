@@ -247,6 +247,25 @@ body{
 .position-absolute {
     position: absolute;
 }
+.large-dot {
+    width: 549px;
+    height: 549px;
+    border-radius: 50%;
+    background-color: #980404;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-image {
+    width: 100%;  /* Adjust the size as needed */
+    height: 100%; /* Adjust the size as needed */
+}
+
+  
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .wide-card img{
@@ -266,6 +285,9 @@ body{
     }
     .card-image{
         margin: 0 !important;
+    }
+    .fix{
+        margin-right: 30px !important;
     }
 }
 
