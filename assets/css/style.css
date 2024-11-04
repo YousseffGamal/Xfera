@@ -205,6 +205,7 @@ body{
     font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
     font-family: var(--Madani--Light); /* Use the main font family */
     margin-bottom: 15px;
+    opacity: 0.7;
 
 }
 .services-description {
