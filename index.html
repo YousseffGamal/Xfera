@@ -3,26 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XFERA </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <style>
+  <title>XFERA</title>
   
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- WOW.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
    <!-- Why Us Heading -->
    <h2 class="why-us-heading">لماذا نحن؟</h2>
 
    <!-- Why Us Section -->
-   <section class="why-us-section">
-     <div class="why-us-card">
-       <img src="./assets/imgs/business-teamwork 1.png" alt="Icon">
-       <span>فريق متكامل  </span>
-       <p>فريق متكامل يضمن لك نتائج ومبيعات عالية  ،<br>  وتحقيق أهدافك باستراتيجيات فعالة</p>
+   <section class="why-us-section container-fluid">
+     <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="why-us-card wow animate__animated animate__fadeInRight" style="background-color: #FFFFFF; color: #000000;">
+                <img src="./assets/imgs/light-bulb.png" alt="Icon">
+                <span>إبداع وتميز </span>
+                <p>إبداع حقيقي، وعمل دؤوب يوصل علامتك  <br>التجارية لطريق من التميز والاحتراف. </p>
+            </div>
+          </div>
+   
+       <div class="col-md-4">
+         <div class="why-us-card wow animate__fadeInUp" style="background-color: #980404; color: #FFFFFF;">
+           <img src="./assets/imgs/experience.png" alt="Icon">
+           <span>فريق متكامل</span>
+           <p>فريق متكامل يضمن لك نتائج ومبيعات عالية،<br>تحقيق أهدافك باستراتيجيات فعالة</p>
+         </div>
+       </div>
+       <div class="col-md-4">
+        <div class="why-us-card wow animate__animated animate__fadeInLeft" style="background-color: #FFFFFF; color: #000000;">
+          <img src="./assets/imgs/experience.png" alt="Icon">
+          <span>خبرة 7 أعوام </span>
+          <p>خبرات طويلة تصل إلا أكثر من 7 سنوات في <br> جميع المجالات، بكل التخصصات.</p>
+        </div>
+      </div>
      </div>
    </section>
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new WOW().init();
+      });
+    </script>
+</body>
 </html>

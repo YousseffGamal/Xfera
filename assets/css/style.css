@@ -3,10 +3,19 @@
     font-family: "Madani Arabic";
     src: url("../fonts/Madani-Arabic/Madani Arabic Regular.ttf") format("truetype");
 }
-
+/* Fonts */
+@font-face {
+    font-family: "Madani Bold";
+    src: url("../fonts/Madani-Arabic/Madani\ Arabic\ Bold.ttf") format("truetype");
+}
+body{
+    background-color:#f1f1f1 ;
+    overflow-x: hidden;
+}
 /* Root variables */
 :root {
     --main-font: "Madani Arabic", sans-serif;
+    
     --main-font-size: clamp(2rem, 3vw + 1rem, 3.978rem);
     --main-color: #000;
     --card-bg-color: #980404;
@@ -21,7 +30,7 @@
 /* Custom styling */
 .why-us-section {
     background:
-        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    linear-gradient(rgba(241, 241, 241, 0.9), rgba(241, 241, 241, 0.9)),
         url('../imgs/تصميم-بدون-عنوان 1.png');
     background-size: 70%;
     background-position: right center;
@@ -68,13 +77,14 @@
 
 .why-us-card span {
     font-size: var(--span-font-size);
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 .why-us-card p {
     font-size: var(--p-font-size);
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 43px;
 }
 
 /* Responsive adjustments */
