@@ -1,0 +1,89 @@
+/* Fonts */
+@font-face {
+    font-family: "Madani Arabic";
+    src: url("../fonts/Madani-Arabic/Madani Arabic Regular.ttf") format("truetype");
+}
+
+/* Root variables */
+:root {
+    --main-font: "Madani Arabic", sans-serif;
+    --main-font-size: clamp(2rem, 3vw + 1rem, 3.978rem);
+    --main-color: #000;
+    --card-bg-color: #980404;
+    --card-width: 526px;
+    --card-height: 100%;
+    --card-font-size: 1.5rem;
+    --text-color: #ffffff;
+    --span-font-size: 2.188rem; /* Font size for span in card */
+    --p-font-size: 1.231rem;     /* Font size for p in card */
+}
+
+/* Custom styling */
+.why-us-section {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('../imgs/تصميم-بدون-عنوان 1.png');
+    background-size: 70%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--main-color);
+    position: relative;
+}
+
+.why-us-heading {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* Card styling */
+.why-us-card {
+    background-color: var(--card-bg-color);
+    width: var(--card-width);
+    height: var(--card-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: var(--text-color);
+    font-family: var(--main-font);
+    padding: 10px;
+    text-align: center;
+}
+
+.why-us-card img {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 85px;
+    height: 85px;
+}
+
+.why-us-card span {
+    font-size: var(--span-font-size);
+    margin-bottom: 10px;
+}
+
+.why-us-card p {
+    font-size: var(--p-font-size);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .why-us-heading {
+        font-size: 2rem;
+    }
+    .why-us-card {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
