@@ -225,6 +225,28 @@ body{
     padding: 5px; /* Optional: Add padding if needed */
 }
 
+.specializations-heading {
+    font-family: var(--main-font); /* Use the main font family */
+    margin-bottom: 85px; /* Optional: space below the heading */
+    font-size: clamp(2rem, 3.938rem + 1vw, 3.938rem); /* Responsive font size */
+}
+
+.overlay-text {
+    color: #ffffff; /* Change text color as needed */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+    text-align: center;
+    padding: 10px; /* Optional padding */
+    border-radius: 10px; /* Optional border radius */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .wide-card img{
