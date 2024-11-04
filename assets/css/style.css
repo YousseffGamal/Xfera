@@ -5,8 +5,12 @@
 }
 /* Fonts */
 @font-face {
-    font-family: "Madani Bold";
-    src: url("../fonts/Madani-Arabic/Madani\ Arabic\ Bold.ttf") format("truetype");
+    font-family: "Madani Medium";
+    src: url("../fonts//Madani-Arabic/Madani\ Arabic\ Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Madani ExtraLight";
+    src: url("../fonts/Madani-Arabic/Madani\ Arabic\ Extra\ Light.ttf") format("truetype");
 }
 body{
     background-color:#f1f1f1 ;
@@ -17,14 +21,18 @@ body{
     --main-font: "Madani Arabic", sans-serif;
     
     --main-font-size: clamp(2rem, 3vw + 1rem, 3.978rem);
-    --main-color: #000;
+    --main-color: #000000;
     --card-bg-color: #980404;
-    --card-width: 526px;
+    --card-width: 100%;
     --card-height: 100%;
     --card-font-size: 1.5rem;
     --text-color: #ffffff;
     --span-font-size: 2.188rem; /* Font size for span in card */
     --p-font-size: 1.231rem;     /* Font size for p in card */
+    --p-Second-Color: #980404;     /* Font size for p in card */
+    --Madani--ExtraLight:"Madani ExtraLight", sans-serif;
+    --Madani--Medium:"Madani Medium", sans-serif;
+
 }
 
 /* Custom styling */
@@ -36,14 +44,14 @@ body{
     background-position: right center;
     background-repeat: no-repeat;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: var(--main-color);
     position: relative;
-}
 
+}
+.margins{
+    margin-left: 109px; /* Add left margin */
+    margin-right: 109px; /* Add right margin */
+}
 .why-us-heading {
     font-family: var(--main-font);
     font-size: var(--main-font-size);
@@ -86,14 +94,106 @@ body{
     line-height: 1.5;
     margin-bottom: 43px;
 }
+.who-we-are {
+    color: var(--p-Second-Color); /* Set color to #980404 */
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.674rem); /* Responsive font size */
+    font-weight: bold; /* Set font weight to bold */
+    font-family: var(--main-font);
+}
+
+.experience {
+    color: var(--main-color); /* Set color to #980404 */
+    font-size: clamp(2rem, 4vw + 1rem, 4.546rem); /* Responsive font size */
+    font-family: var(--Madani--ExtraLight);
+}
+
+.starts {
+    color: var(--main-color); /* Set color to #980404 */
+    font-size: clamp(1rem, 2vw + 1rem, 1.655rem); /* Responsive font size */
+    font-family: var(--main-font);
+}
+
+.wide-card {
+    background-color: #000000;
+    height: 212px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding */
+}
+.wide-card img {
+    width: 50px; /* Set desired width */
+    height: 50px; /* Set desired height */
+    margin-right: 15px; /* Space between image and text */
+}
+.expertise-text {
+    color: #FFFFFF; /* Set text color */
+    font-size: clamp(1rem, 2vw + 1rem, 2.015rem); /* Responsive font size */
+    font-family: var(--Madani--Medium); /* Use the main font family */
+}
+.expertise-description {
+    color: #FFFFFF; /* Set text color */
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 1.134rem); /* Responsive font size */
+    font-family: var(--main-font); /* Use the main font family */
+}
+.card-container {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    height: 212px;
+}
+
+.card-image {
+    width: 122px;
+    height: 132px;
+    margin-left: auto;
+}
+
+.card-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.percentage-text {
+    font-family: var(--Madani--Medium); /* Use the main font family */
+
+    display: block;
+    font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
+}
+
+.description-text {
+    font-family: var(--main-font); /* Use the main font family */
+
+    font-size: 1.438rem; /* Fixed font size */
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .wide-card img{
+        width: 100%;
+        height: 100%;
+    }
     .why-us-heading {
         font-size: 2rem;
     }
     .why-us-card {
         width: 90%;
         font-size: 1rem;
+    }
+    .margins {
+        margin-left: 10px; /* Reduce left margin on smaller screens */
+        margin-right: 10px; /* Reduce right margin on smaller screens */
+    }
+    .card-image{
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .margins {
+        margin-left: 0; /* Remove margin on very small screens */
+        margin-right: 0; /* Remove margin on very small screens */
     }
 }
