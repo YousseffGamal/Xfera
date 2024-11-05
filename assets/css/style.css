@@ -138,7 +138,7 @@ body{
 }
 .expertise-description {
     color: #FFFFFF; /* Set text color */
-    font-size: clamp(0.1rem, 1vw + 0.1rem, 1rem); /* Responsive font size */
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 0.8rem); /* Responsive font size */
     font-family: var(--main-font); /* Use the main font family */
 }
 .card-container {
@@ -148,6 +148,8 @@ body{
     display: flex;
     align-items: center;
     height: 212px;
+    width: 100%;
+
 }
 
 .card-image {
@@ -161,18 +163,18 @@ body{
     margin-right: 10px;
 }
 
+
 .percentage-text {
     font-family: var(--Madani--Medium); /* Use the main font family */
-
     display: block;
-    font-size: clamp(1rem, 2vw + 1rem, 2.5rem); /* Responsive font size */
-}
-
-.description-text {
+    font-size: clamp(1rem, 1.5vw + 1rem, 2rem); /* Adjusted responsive font size */
+    overflow-wrap: break-word; /* Ensure long text wraps within card */
+  }
+  
+  .description-text {
     font-family: var(--main-font); /* Use the main font family */
-
-    font-size: 1rem; /* Fixed font size */
-}
+    font-size: 0.8rem; /* Fixed font size */
+  }
 .service-card {
     background-color: #1a1a1a; /* Darker background for the card */
     border-radius: 30px;
