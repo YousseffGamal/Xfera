@@ -319,8 +319,56 @@ body{
     font-family: var(--main-font); /* Use the main font family */
   }
   
+  .text-container p:first-of-type {
+    font-size: clamp(1rem, 1.5rem + 0.5vw, 2.188rem); /* Responsive font size with smaller base for mobile */
+    color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    margin-bottom: 15px; /* Optional spacing */
+    font-family: var(--Madani--Light); /* Use the main font family */
+  }
+  
+  .text-container h2 {
+    font-size: clamp(2rem, 3rem + 1vw, 4rem); /* Responsive font size with smaller base for mobile */
+    color: #000000; /* You can adjust this color if needed */
+    margin-bottom: 15px; /* Optional spacing */
+    font-family: var(--main-font); /* Use the main font family */
+  }
+  
+  .text-container p:last-of-type {
+    font-size: clamp(1rem, 1.5rem + 0.5vw, 2rem); /* Responsive font size with smaller base for mobile */
+    color: #980404; /* Dark red color */
+    font-family: var(--main-font); /* Use the main font family */
+  }
+  .social-media-icons {
+    display: flex;
+    justify-content: right; /* Align the icons to the right */
+    margin-top: 60px; /* Optional spacing from the text above */
+}
+
+.social-icon {
+    background-color: #000000; /* Black background */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center; /* Center the icon within the circle */
+    align-items: center; /* Center the icon vertically */
+    width: 60px; /* Set a larger fixed width */
+    height: 60px; /* Set a larger fixed height */
+    margin: 0 10px; /* Space between icons */
+    color: #FFFFFF; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 2rem; /* Increase the font size for larger icons */
+}
+
+.social-icon:hover {
+    background-color: #B90000; /* Change background on hover */
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    svg{
+        width: 100% !important;
+    }
     .large-img {
         width: 100%; /* Full width on small screens */
         height: auto; /* Maintain aspect ratio */
@@ -364,3 +412,5 @@ body{
         margin-right: 0; /* Remove margin on very small screens */
     }
 }
+
+
