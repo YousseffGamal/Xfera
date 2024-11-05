@@ -314,11 +314,11 @@ body{
   }
   .stat-text {
     color: #FFFFFF;
-    font-size: clamp(1rem, 1.5rem + 1vw, 2rem); /* Responsive font size for text above numbers */
+    font-size: clamp(0.875rem, 1.25rem + 0.5vw, 1.5rem); /* Smaller responsive font size */
     margin-bottom: 51px !important;
     font-family: var(--main-font); /* Use the main font family */
-
   }
+  
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .large-img {
