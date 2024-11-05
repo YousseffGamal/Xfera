@@ -108,7 +108,7 @@ body{
 
 .experience {
     color: var(--main-color); /* Set color to #980404 */
-    font-size: clamp(2rem, 4vw + 1rem, 4.546rem); /* Responsive font size */
+    font-size: clamp(2rem, 4vw + 1rem, 3.546rem); /* Responsive font size */
     font-family: var(--Madani--ExtraLight);
 }
 
@@ -133,12 +133,12 @@ body{
 }
 .expertise-text {
     color: #FFFFFF; /* Set text color */
-    font-size: clamp(1rem, 2vw + 1rem, 2.015rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
     font-family: var(--Madani--Medium); /* Use the main font family */
 }
 .expertise-description {
     color: #FFFFFF; /* Set text color */
-    font-size: clamp(0.1rem, 1vw + 0.1rem, 1.134rem); /* Responsive font size */
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 1rem); /* Responsive font size */
     font-family: var(--main-font); /* Use the main font family */
 }
 .card-container {
@@ -165,7 +165,7 @@ body{
     font-family: var(--Madani--Medium); /* Use the main font family */
 
     display: block;
-    font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw + 1rem, 2.5rem); /* Responsive font size */
 }
 
 .description-text {
