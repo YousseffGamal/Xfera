@@ -133,7 +133,7 @@ body{
 }
 .expertise-text {
     color: #FFFFFF; /* Set text color */
-    font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
+    font-size: clamp(1rem, 1vw + 1rem, 3rem); /* Responsive font size */
     font-family: var(--Madani--Medium); /* Use the main font family */
 }
 .expertise-description {
@@ -308,11 +308,11 @@ body{
     font-family: var(--Madani--Medium); /* Use the main font family */
 
     color: #B90000;
-    font-size: clamp(2rem, 3.938rem + 1vw, 5.75rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3em + 1vw, 5rem); /* Responsive font size */
   }
   .stat-text {
     color: #FFFFFF;
-    font-size: clamp(1.5rem, 2rem + 1vw, 2.5rem); /* Responsive font size for text above numbers */
+    font-size: clamp(1rem, 1.5rem + 1vw, 2rem); /* Responsive font size for text above numbers */
     margin-bottom: 51px !important;
     font-family: var(--main-font); /* Use the main font family */
 
