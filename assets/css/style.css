@@ -167,13 +167,13 @@ body{
 .percentage-text {
     font-family: var(--Madani--Medium); /* Use the main font family */
     display: block;
-    font-size: clamp(1rem, 1.5vw + 1rem, 2rem); /* Adjusted responsive font size */
+    font-size: clamp(2rem, 1.5vw + 1rem, 2rem); /* Adjusted responsive font size */
     overflow-wrap: break-word; /* Ensure long text wraps within card */
   }
   
   .description-text {
     font-family: var(--main-font); /* Use the main font family */
-    font-size: 0.8rem; /* Fixed font size */
+    font-size: 20px /* Fixed font size */
   }
 .service-card {
     background-color: #1a1a1a; /* Darker background for the card */
@@ -314,7 +314,7 @@ body{
   }
   .stat-text {
     color: #FFFFFF;
-    font-size: clamp(0.875rem, 1.25rem + 0.5vw, 1.5rem); /* Smaller responsive font size */
+    font-size: clamp(0.975rem, 1.25rem + 0.5vw, 2rem); /* Smaller responsive font size */
     margin-bottom: 51px !important;
     font-family: var(--main-font); /* Use the main font family */
   }
@@ -362,10 +362,143 @@ body{
 .social-icon:hover {
     background-color: #B90000; /* Change background on hover */
 }
+.footer-contact-text {
+    font-size: clamp(1.438rem, 1.5em + 1vw, 2rem);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--Madani--Light); /* Use the main font family */
 
+  }
+  .footer-advice-text {
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    font-size: clamp(2.2rem, 3em + 1vw, 3.2rem);
+    color: #FFFFFF;
+    font-family: var(--main-font); /* Use the main font family */
+
+  }
+footer ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(1.5rem, 1.5em + 1vw, 1.5rem);
+    font-family: var(--Madani--Light); /* Use the main font family */
+
+}
+.macbook-slider-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f0f0f0; /* Adjust as needed */
+    position: relative; /* Ensure that the section is positioned */
+    z-index: 1; /* Ensure the section itself has a stacking context */
+}
+
+.macbook-container {
+    position: relative;
+    width: 600px; /* Adjust as needed */
+    height: 350px; /* Adjust to match MacBook proportions */
+    background-image: url('../imgs/Macbook-Pro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10; /* Ensure MacBook container is above the carousel */
+    overflow: hidden; /* Prevent any overflow if carousel goes out of bounds */
+}
+
+/* Position the carousel inside the MacBook screen area */
+#macbook-slider {
+    position: absolute;
+    top: 3%; /* Adjust to fit screen area */
+    left: 8%; /* Adjust to fit screen area */
+    width: 80%; /* Adjust to fit screen width */
+    height: 60%; /* Adjust to fit screen height */
+    z-index: 5; /* Ensure carousel is below the MacBook */
+}
+
+#macbook-slider .carousel-item img {
+    width: 95% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* Optional: Style the carousel controls if needed */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 15; /* Ensure controls stay above the MacBook */
+}
+
+/* Position the carousel control buttons outside the slider */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent; /* Ensure no background behind icons */
+}
+
+/* Move controls outside the MacBook screen */
+.carousel-control-prev {
+    left: -60px;
+}
+
+.carousel-control-next {
+    right: -60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Remove default Bootstrap icon */
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+}
+
+/* Left Arrow */
+.carousel-control-prev-icon::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+/* Right Arrow */
+.carousel-control-next-icon::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 8 4.646 3.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+.macbook-text h2{
+    color: #000000;
+    font-family: var(--main-font); /* Use the main font family */
+    font-size: clamp(2.2rem, 3em + 1vw, 3.2rem);
+    text-align: center;
+
+}
+.macbook-text p{
+    margin-top: 13;
+    color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    font-family: var(--Madani--Light); /* Use the main font family */
+    font-size: 23px;
+    text-align: center;
+
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    #macbook-slider {
+        position: absolute;
+        top: 20%; /* Adjust to fit screen area */
+        left: 10%; /* Adjust to fit screen area */
+        width: 80%; /* Adjust to fit screen width */
+        height: 60%; /* Adjust to fit screen height */
+        z-index: 5; /* Ensure carousel is below the MacBook */
+    }
+    
+    #macbook-slider .carousel-item img {
+        width: 99% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+    footer ul li a {
+        font-size: 15px;
+    }
     svg{
         width: 100% !important;
     }
