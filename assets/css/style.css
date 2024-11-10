@@ -3,27 +3,32 @@
     font-family: "Madani Arabic";
     src: url("../fonts/Madani-Arabic/Madani Arabic Regular.ttf") format("truetype");
 }
+
 /* Fonts */
 @font-face {
     font-family: "Madani Medium";
     src: url("../fonts//Madani-Arabic/Madani\ Arabic\ Medium.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Madani ExtraLight";
     src: url("../fonts/Madani-Arabic/Madani\ Arabic\ Extra\ Light.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Madani Light";
     src: url("../fonts/Madani-Arabic/Madani\ Arabic\ Light.ttf") format("truetype");
 }
-body{
-    background-color:#f1f1f1 ;
+
+body {
+    background-color: #f1f1f1;
     overflow-x: hidden !important;
 }
+
 /* Root variables */
 :root {
     --main-font: "Madani Arabic", sans-serif;
-    
+
     --main-font-size: clamp(2rem, 3vw + 1rem, 3.978rem);
     --main-color: #000000;
     --card-bg-color: #980404;
@@ -31,19 +36,22 @@ body{
     --card-height: 100%;
     --card-font-size: 1.5rem;
     --text-color: #ffffff;
-    --span-font-size: 2.188rem; /* Font size for span in card */
-    --p-font-size: 1.231rem;     /* Font size for p in card */
-    --p-Second-Color: #980404;     /* Font size for p in card */
-    --Madani--ExtraLight:"Madani ExtraLight", sans-serif;
-    --Madani--Medium:"Madani Medium", sans-serif;
-    --Madani--Light:"Madani Light", sans-serif;
+    --span-font-size: 2.188rem;
+    /* Font size for span in card */
+    --p-font-size: 1.231rem;
+    /* Font size for p in card */
+    --p-Second-Color: #980404;
+    /* Font size for p in card */
+    --Madani--ExtraLight: "Madani ExtraLight", sans-serif;
+    --Madani--Medium: "Madani Medium", sans-serif;
+    --Madani--Light: "Madani Light", sans-serif;
 
 }
 
 /* Custom styling */
 .why-us-section {
     background:
-    linear-gradient(rgba(241, 241, 241, 0.9), rgba(241, 241, 241, 0.9)),
+        linear-gradient(rgba(241, 241, 241, 0.9), rgba(241, 241, 241, 0.9)),
         url('../imgs/تصميم-بدون-عنوان 1.png');
     background-size: 70%;
     background-position: right center;
@@ -53,10 +61,14 @@ body{
     position: relative;
 
 }
-.margins{
-    margin-left: 109px; /* Add left margin */
-    margin-right: 109px; /* Add right margin */
+
+.margins {
+    margin-left: 109px;
+    /* Add left margin */
+    margin-right: 109px;
+    /* Add right margin */
 }
+
 .why-us-heading {
     font-family: var(--main-font);
     font-size: var(--main-font-size);
@@ -99,22 +111,30 @@ body{
     line-height: 1.5;
     margin-bottom: 43px;
 }
+
 .who-we-are {
-    color: var(--p-Second-Color); /* Set color to #980404 */
-    font-size: clamp(1.5rem, 3vw + 1rem, 2.674rem); /* Responsive font size */
-    font-weight: bold; /* Set font weight to bold */
+    color: var(--p-Second-Color);
+    /* Set color to #980404 */
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.674rem);
+    /* Responsive font size */
+    font-weight: bold;
+    /* Set font weight to bold */
     font-family: var(--main-font);
 }
 
 .experience {
-    color: var(--main-color); /* Set color to #980404 */
-    font-size: clamp(2rem, 4vw + 1rem, 3.546rem); /* Responsive font size */
+    color: var(--main-color);
+    /* Set color to #980404 */
+    font-size: clamp(2rem, 4vw + 1rem, 3.546rem);
+    /* Responsive font size */
     font-family: var(--Madani--ExtraLight);
 }
 
 .starts {
-    color: var(--main-color); /* Set color to #980404 */
-    font-size: clamp(1rem, 2vw + 1rem, 1.655rem); /* Responsive font size */
+    color: var(--main-color);
+    /* Set color to #980404 */
+    font-size: clamp(1rem, 2vw + 1rem, 1.655rem);
+    /* Responsive font size */
     font-family: var(--main-font);
 }
 
@@ -123,24 +143,39 @@ body{
     height: 212px;
     border-radius: 40px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add padding */
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px;
+    /* Add padding */
 }
+
 .wide-card img {
-    width: 50px; /* Set desired width */
-    height: 50px; /* Set desired height */
-    margin-right: 15px; /* Space between image and text */
+    width: 50px;
+    /* Set desired width */
+    height: 50px;
+    /* Set desired height */
+    margin-right: 15px;
+    /* Space between image and text */
 }
+
 .expertise-text {
-    color: #FFFFFF; /* Set text color */
-    font-size: clamp(1rem, 1vw + 1rem, 3rem); /* Responsive font size */
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    color: #FFFFFF;
+    /* Set text color */
+    font-size: clamp(1rem, 1vw + 1rem, 3rem);
+    /* Responsive font size */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
 }
+
 .expertise-description {
-    color: #FFFFFF; /* Set text color */
-    font-size: clamp(0.1rem, 1vw + 0.1rem, 0.8rem); /* Responsive font size */
-    font-family: var(--main-font); /* Use the main font family */
+    color: #FFFFFF;
+    /* Set text color */
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 0.8rem);
+    /* Responsive font size */
+    font-family: var(--main-font);
+    /* Use the main font family */
 }
+
 .card-container {
     background-color: #FFFFFF;
     border-radius: 40px;
@@ -165,33 +200,42 @@ body{
 
 
 .percentage-text {
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
     display: block;
-    font-size: clamp(2rem, 1.5vw + 1rem, 2rem); /* Adjusted responsive font size */
-    overflow-wrap: break-word; /* Ensure long text wraps within card */
-  }
-  
-  .description-text {
-    font-family: var(--main-font); /* Use the main font family */
-    font-size: 15px /* Fixed font size */
-  }
+    font-size: clamp(2rem, 1.5vw + 1rem, 2rem);
+    /* Adjusted responsive font size */
+    overflow-wrap: break-word;
+    /* Ensure long text wraps within card */
+}
+
+.description-text {
+    font-family: var(--main-font);
+    /* Use the main font family */
+    font-size: 15px
+        /* Fixed font size */
+}
+
 .service-card {
-    background-color: #1a1a1a; /* Darker background for the card */
+    background-color: #1a1a1a;
+    /* Darker background for the card */
     border-radius: 30px;
     overflow: hidden;
-    
+
     position: relative;
 }
 
 .service-card img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
     border-radius: 30px;
 
 }
 
 .service-text {
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
 
     position: absolute;
     bottom: 80px;
@@ -199,47 +243,67 @@ body{
     right: 0;
     text-align: center;
     color: #FFFFFF;
-    font-size: clamp(1rem, 2vw + 1rem, 2rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    /* Responsive font size */
 
     padding: 10px;
 }
+
 .services-heading {
-    font-size: clamp(1rem, 2vw + 1rem, 3rem); /* Responsive font size */
-    font-family: var(--Madani--Light); /* Use the main font family */
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    /* Responsive font size */
+    font-family: var(--Madani--Light);
+    /* Use the main font family */
     margin-bottom: 15px;
     opacity: 0.7;
 
 }
+
 .services-description {
-    font-size: clamp(2.5rem, 4vw + 2rem, 5rem); /* Responsive font size */
-    font-family: var(--main-font); /* Use the main font family */
+    font-size: clamp(2.5rem, 4vw + 2rem, 5rem);
+    /* Responsive font size */
+    font-family: var(--main-font);
+    /* Use the main font family */
     margin-bottom: 85px;
 }
+
 .service-subtext {
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
     position: absolute;
-    bottom: 10px; /* Adjust this value based on your design */
+    bottom: 10px;
+    /* Adjust this value based on your design */
     left: 0;
     right: 0;
     text-align: center;
     color: #FFFFFF;
-    font-size: clamp(1rem, 1vw + 0.188rem, 1rem); /* Responsive font size based on 1.188rem */
-    padding: 5px; /* Optional: Add padding if needed */
+    font-size: clamp(1rem, 1vw + 0.188rem, 1rem);
+    /* Responsive font size based on 1.188rem */
+    padding: 5px;
+    /* Optional: Add padding if needed */
 }
 
 .specializations-heading {
-    font-family: var(--main-font); /* Use the main font family */
-    margin-bottom: 85px; /* Optional: space below the heading */
-    font-size: clamp(2rem, 3.938rem + 1vw, 3.938rem); /* Responsive font size */
+    font-family: var(--main-font);
+    /* Use the main font family */
+    margin-bottom: 85px;
+    /* Optional: space below the heading */
+    font-size: clamp(2rem, 3.938rem + 1vw, 3.938rem);
+    /* Responsive font size */
 }
 
 .overlay-text {
-    color: #ffffff; /* Change text color as needed */
-    font-size: 1.5rem; /* Adjust font size */
-    font-weight: bold; /* Adjust font weight */
+    color: #ffffff;
+    /* Change text color as needed */
+    font-size: 1.5rem;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Adjust font weight */
     text-align: center;
-    padding: 10px; /* Optional padding */
-    border-radius: 10px; /* Optional border radius */
+    padding: 10px;
+    /* Optional padding */
+    border-radius: 10px;
+    /* Optional border radius */
 }
 
 .position-relative {
@@ -249,6 +313,7 @@ body{
 .position-absolute {
     position: absolute;
 }
+
 .large-dot {
     width: 549px;
     height: 549px;
@@ -263,157 +328,214 @@ body{
 }
 
 .small-image {
-    width: 100%;  /* Adjust the size as needed */
-    height: 100%; /* Adjust the size as needed */
+    width: 100%;
+    /* Adjust the size as needed */
+    height: 100%;
+    /* Adjust the size as needed */
 }
+
 .dot-container {
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Space between image and text */
-  }
-  
-  .red-dot {
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+.red-dot {
     top: 18%;
     right: 5%;
     position: absolute;
-    width: 549px; /* Adjust size for the red dot */
+    width: 549px;
+    /* Adjust size for the red dot */
     height: 549px;
     border-radius: 50%;
     background-color: #980404;
     z-index: 1;
-  }
-  
-  .large-img {
+}
+
+.large-img {
     position: relative;
     z-index: 2;
     width: 602.92px;
     height: 672.92px;
-  }
-  .text-container {
-    flex: 1; /* Allows text to take remaining space next to image */
-  }
+}
+
+.text-container {
+    flex: 1;
+    /* Allows text to take remaining space next to image */
+}
 
 
-  .stats-section {
+.stats-section {
     background-color: #000000;
-  }
-  
-  .stat {
+}
+
+.stat {
     margin-top: 109px;
-  }
-  
- 
-  
-  .stat-number {
+}
+
+
+
+.stat-number {
     margin-bottom: 100px;
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
 
     color: #B90000;
-    font-size: clamp(1.5rem, 3em + 1vw, 5rem); /* Responsive font size */
-  }
-  .stat-text {
+    font-size: clamp(1.5rem, 3em + 1vw, 5rem);
+    /* Responsive font size */
+}
+
+.stat-text {
     color: #FFFFFF;
-    font-size: clamp(0.975rem, 1.25rem + 0.5vw, 2rem); /* Smaller responsive font size */
+    font-size: clamp(0.975rem, 1.25rem + 0.5vw, 2rem);
+    /* Smaller responsive font size */
     margin-bottom: 51px !important;
-    font-family: var(--main-font); /* Use the main font family */
-  }
-  
-  .text-container p:first-of-type {
-    font-size: clamp(1rem, 1.5rem + 0.5vw, 2.188rem); /* Responsive font size with smaller base for mobile */
-    color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
-    margin-bottom: 15px; /* Optional spacing */
-    font-family: var(--Madani--Light); /* Use the main font family */
-  }
-  
-  .text-container h2 {
-    font-size: clamp(2rem, 3rem + 1vw, 4rem); /* Responsive font size with smaller base for mobile */
-    color: #000000; /* You can adjust this color if needed */
-    margin-bottom: 15px; /* Optional spacing */
-    font-family: var(--main-font); /* Use the main font family */
-  }
-  
-  .text-container p:last-of-type {
-    font-size: clamp(1rem, 1.5rem + 0.5vw, 2rem); /* Responsive font size with smaller base for mobile */
-    color: #980404; /* Dark red color */
-    font-family: var(--main-font); /* Use the main font family */
-  }
-  .social-media-icons {
+    font-family: var(--main-font);
+    /* Use the main font family */
+}
+
+.text-container p:first-of-type {
+    font-size: clamp(1rem, 1.5rem + 0.5vw, 2.188rem);
+    /* Responsive font size with smaller base for mobile */
+    color: rgba(0, 0, 0, 0.7);
+    /* Black with 70% opacity */
+    margin-bottom: 15px;
+    /* Optional spacing */
+    font-family: var(--Madani--Light);
+    /* Use the main font family */
+}
+
+.text-container h2 {
+    font-size: clamp(2rem, 3rem + 1vw, 4rem);
+    /* Responsive font size with smaller base for mobile */
+    color: #000000;
+    /* You can adjust this color if needed */
+    margin-bottom: 15px;
+    /* Optional spacing */
+    font-family: var(--main-font);
+    /* Use the main font family */
+}
+
+.text-container p:last-of-type {
+    font-size: clamp(1rem, 1.5rem + 0.5vw, 2rem);
+    /* Responsive font size with smaller base for mobile */
+    color: #980404;
+    /* Dark red color */
+    font-family: var(--main-font);
+    /* Use the main font family */
+}
+
+.social-media-icons {
     display: flex;
-    justify-content: right; /* Align the icons to the right */
-    margin-top: 60px; /* Optional spacing from the text above */
+    justify-content: right;
+    /* Align the icons to the right */
+    margin-top: 60px;
+    /* Optional spacing from the text above */
 }
 
 .social-icon {
-    background-color: #000000; /* Black background */
-    border-radius: 50%; /* Circular shape */
+    background-color: #000000;
+    /* Black background */
+    border-radius: 50%;
+    /* Circular shape */
     display: flex;
-    justify-content: center; /* Center the icon within the circle */
-    align-items: center; /* Center the icon vertically */
-    width: 60px; /* Set a larger fixed width */
-    height: 60px; /* Set a larger fixed height */
-    margin: 0 10px; /* Space between icons */
-    color: #FFFFFF; /* Icon color */
-    text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    font-size: 2rem; /* Increase the font size for larger icons */
+    justify-content: center;
+    /* Center the icon within the circle */
+    align-items: center;
+    /* Center the icon vertically */
+    width: 60px;
+    /* Set a larger fixed width */
+    height: 60px;
+    /* Set a larger fixed height */
+    margin: 0 10px;
+    /* Space between icons */
+    color: #FFFFFF;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline from links */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+    font-size: 2rem;
+    /* Increase the font size for larger icons */
 }
 
 .social-icon:hover {
-    background-color: #B90000; /* Change background on hover */
+    background-color: #B90000;
+    /* Change background on hover */
 }
+
 .footer-contact-text {
     font-size: clamp(1.438rem, 1.5em + 1vw, 2rem);
     color: rgba(255, 255, 255, 0.7);
-    font-family: var(--Madani--Light); /* Use the main font family */
+    font-family: var(--Madani--Light);
+    /* Use the main font family */
 
-  }
-  .footer-advice-text {
+}
+
+.footer-advice-text {
     margin-top: 10px;
     margin-bottom: 50px;
 
     font-size: clamp(1.7rem, 3em + 1vw, 2.7rem);
     color: #FFFFFF;
-    font-family: var(--main-font); /* Use the main font family */
+    font-family: var(--main-font);
+    /* Use the main font family */
 
-  }
-footer ul li a{
+}
+
+footer ul li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: clamp(1.5rem, 1.5em + 1vw, 1.5rem);
-    font-family: var(--Madani--Light); /* Use the main font family */
+    font-family: var(--Madani--Light);
+    /* Use the main font family */
 
 }
+
 .macbook-slider-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: #f0f0f0; /* Adjust as needed */
-    position: relative; /* Ensure that the section is positioned */
-    z-index: 1; /* Ensure the section itself has a stacking context */
+    background-color: #f0f0f0;
+    /* Adjust as needed */
+    position: relative;
+    /* Ensure that the section is positioned */
+    z-index: 1;
+    /* Ensure the section itself has a stacking context */
 }
 
 .macbook-container {
     position: relative;
-    width: 600px; /* Adjust as needed */
-    height: 350px; /* Adjust to match MacBook proportions */
+    width: 600px;
+    /* Adjust as needed */
+    height: 350px;
+    /* Adjust to match MacBook proportions */
     background-image: url('../imgs/Macbook-Pro.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 10; /* Ensure MacBook container is above the carousel */
-    overflow: hidden; /* Prevent any overflow if carousel goes out of bounds */
+    z-index: 10;
+    /* Ensure MacBook container is above the carousel */
+    overflow: hidden;
+    /* Prevent any overflow if carousel goes out of bounds */
 }
 
 /* Position the carousel inside the MacBook screen area */
 #macbook-slider {
     position: absolute;
-    top: 3%; /* Adjust to fit screen area */
-    left: 8%; /* Adjust to fit screen area */
-    width: 80%; /* Adjust to fit screen width */
-    height: 60%; /* Adjust to fit screen height */
-    z-index: 5; /* Ensure carousel is below the MacBook */
+    top: 3%;
+    /* Adjust to fit screen area */
+    left: 8%;
+    /* Adjust to fit screen area */
+    width: 80%;
+    /* Adjust to fit screen width */
+    height: 60%;
+    /* Adjust to fit screen height */
+    z-index: 5;
+    /* Ensure carousel is below the MacBook */
 }
 
 #macbook-slider .carousel-item img {
@@ -425,7 +547,8 @@ footer ul li a{
 /* Optional: Style the carousel controls if needed */
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 15; /* Ensure controls stay above the MacBook */
+    z-index: 15;
+    /* Ensure controls stay above the MacBook */
 }
 
 /* Position the carousel control buttons outside the slider */
@@ -436,7 +559,8 @@ footer ul li a{
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color: transparent; /* Ensure no background behind icons */
+    background-color: transparent;
+    /* Ensure no background behind icons */
 }
 
 /* Move controls outside the MacBook screen */
@@ -450,8 +574,10 @@ footer ul li a{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none; /* Remove default Bootstrap icon */
-    width: 24px; /* Adjust size as needed */
+    background-image: none;
+    /* Remove default Bootstrap icon */
+    width: 24px;
+    /* Adjust size as needed */
     height: 24px;
 }
 
@@ -464,32 +590,38 @@ footer ul li a{
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 15px solid #000; /* Arrow color */
-  }
-  
-  /* Right Arrow */
-  .carousel-control-next-icon::before {
+    border-right: 15px solid #000;
+    /* Arrow color */
+}
+
+/* Right Arrow */
+.carousel-control-next-icon::before {
     content: "";
     display: block;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 15px solid #000; /* Arrow color */
-  }
-  
+    border-left: 15px solid #000;
+    /* Arrow color */
+}
 
-.macbook-text h2{
+
+.macbook-text h2 {
     color: #000000;
-    font-family: var(--main-font); /* Use the main font family */
+    font-family: var(--main-font);
+    /* Use the main font family */
     font-size: clamp(2.2rem, 3em + 1vw, 3.2rem);
     text-align: center;
 
 }
-.macbook-text p{
+
+.macbook-text p {
     margin-top: 13;
-    color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
-    font-family: var(--Madani--Light); /* Use the main font family */
+    color: rgba(0, 0, 0, 0.7);
+    /* Black with 70% opacity */
+    font-family: var(--Madani--Light);
+    /* Use the main font family */
     font-size: 23px;
     text-align: center;
 
@@ -497,91 +629,121 @@ footer ul li a{
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .logos h2{
-       
+    .logos h2 {
+
         font-size: 30px !important;
 
-      }
-      .logos {
+    }
+
+    .logos {
         margin-top: 125px;
         background-color: #FFFFFF;
         overflow: hidden;
         white-space: nowrap;
         position: relative;
-      }
-    .navbar{
+    }
+
+    .navbar {
         background-color: #000000 !important;
     }
+
     #macbook-slider {
         position: absolute;
-        top: 20%; /* Adjust to fit screen area */
-        left: 10%; /* Adjust to fit screen area */
-        width: 80%; /* Adjust to fit screen width */
-        height: 60%; /* Adjust to fit screen height */
-        z-index: 5; /* Ensure carousel is below the MacBook */
+        top: 20%;
+        /* Adjust to fit screen area */
+        left: 10%;
+        /* Adjust to fit screen area */
+        width: 80%;
+        /* Adjust to fit screen width */
+        height: 60%;
+        /* Adjust to fit screen height */
+        z-index: 5;
+        /* Ensure carousel is below the MacBook */
     }
-    
+
     #macbook-slider .carousel-item img {
         width: 99% !important;
         height: 100% !important;
         object-fit: cover;
     }
+
     footer ul li a {
         font-size: 15px;
     }
-    svg{
+
+    svg {
         width: 100% !important;
     }
+
     .large-img {
-        width: 100%; /* Full width on small screens */
-        height: auto; /* Maintain aspect ratio */
-      }
-    
-      .red-dot {
-        width: 300px; /* Smaller dot on mobile */
+        width: 100%;
+        /* Full width on small screens */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .red-dot {
+        width: 300px;
+        /* Smaller dot on mobile */
         height: 300px;
         top: 10%;
         right: 5%;
-      }
+    }
+
     .dot-container {
-        margin-right: 0; /* Remove margin for smaller screens */
-      }
-    .wide-card img{
+        margin-right: 0;
+        /* Remove margin for smaller screens */
+    }
+
+    .wide-card img {
         width: 100%;
         height: 100%;
     }
+
     .why-us-heading {
         font-size: 2rem;
     }
+
     .why-us-card {
         width: 90%;
         font-size: 1rem;
     }
+
     .margins {
-        margin-left: 10px; /* Reduce left margin on smaller screens */
-        margin-right: 10px; /* Reduce right margin on smaller screens */
+        margin-left: 10px;
+        /* Reduce left margin on smaller screens */
+        margin-right: 10px;
+        /* Reduce right margin on smaller screens */
     }
-    .card-image{
+
+    .card-image {
         margin: 0 !important;
     }
-    .fix{
+
+    .fix {
         margin-right: 30px !important;
     }
-    .left .textL{
+
+    .left .textL {
         transform: translateY(-631%) !important;
     }
+
     @media (max-width: 768px) {
-        .TextR, .textL {
+
+        .TextR,
+        .textL {
             font-size: 4vw !important;
-          
+
         }
     }
 }
 
 @media (max-width: 576px) {
     .margins {
-        margin-left: 0; /* Remove margin on very small screens */
-        margin-right: 0; /* Remove margin on very small screens */
+        margin-left: 0;
+        /* Remove margin on very small screens */
+        margin-right: 0;
+        /* Remove margin on very small screens */
     }
 }
 
@@ -627,16 +789,23 @@ footer ul li a{
     z-index: 1;
 }
 
-.left, .right {
-    
+.left,
+.right {
+
     text-align: left;
 }
-.left .textL, .right .TextR {
-transform: translateY(-40%); /* Adjust this value to move the text upwards */
+
+.left .textL,
+.right .TextR {
+    transform: translateY(-40%);
+    /* Adjust this value to move the text upwards */
 }
- .right .TextR {
-    transform: translateY(-90%); /* Adjust this value to move the text upwards */
-    }
+
+.right .TextR {
+    transform: translateY(-90%);
+    /* Adjust this value to move the text upwards */
+}
+
 .center {
     position: relative;
     text-align: center;
@@ -650,19 +819,22 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
     position: absolute;
     bottom: 30%;
     right: 5%;
-    font-size: 3.12vw;  /* Use vw for responsive font size */
+    font-size: 3.12vw;
+    /* Use vw for responsive font size */
     text-align: right;
 }
 
 .textL {
-    font-size: 1.5625vw;  /* Use vw for responsive font size */
+    font-size: 1.5625vw;
+    /* Use vw for responsive font size */
     position: absolute;
     bottom: 36%;
 }
 
 /* Center Image */
 .center-img {
-    width: 50vw;  /* Make the image responsive */
+    width: 50vw;
+    /* Make the image responsive */
     height: auto;
     position: relative;
     z-index: 2;
@@ -671,8 +843,10 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 /* World Image (behind the center image) */
 .world-img {
     position: absolute;
-    width: 2000px;  /* Large width to cover background */
-    height: 2000px;  /* Large height to cover background */
+    width: 2000px;
+    /* Large width to cover background */
+    height: 2000px;
+    /* Large height to cover background */
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -701,7 +875,7 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
- 
+
     .parallax-content {
         flex-direction: column;
         padding: 0 2%;
@@ -713,7 +887,8 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
         margin-bottom: 20px;
     }
 
-    .TextR, .textL {
+    .TextR,
+    .textL {
         font-size: 6vw;
         position: static;
         text-align: center;
@@ -734,19 +909,23 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 
 /* navbar */
 
-.nav-link{
+.nav-link {
     color: rgba(255, 255, 255, 0.7) !important;
     font-size: 20px;
-    font-family: var(--main-font); /* Use the main font family */
+    font-family: var(--main-font);
+    /* Use the main font family */
 
 }
-.active{
+
+.active {
     color: rgba(255, 255, 255) !important;
 
 }
+
 .btn-primary {
     font-size: 20px;
-    font-family: var(--Madani--Medium); /* Use the main font family */
+    font-family: var(--Madani--Medium);
+    /* Use the main font family */
 
     background-color: #B20909;
     border-color: #B20909;
@@ -758,28 +937,36 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Ensures text is centered if there's no flex */
+    text-align: center;
+    /* Ensures text is centered if there's no flex */
 }
+
 /* Initial navbar background */
 
 /* Black fade effect on scroll */
 /* Initial navbar background (transparent) */
 .navbar {
-    background-color: rgba(0, 0, 0, 0);  /* Start with fully transparent background */
-    opacity: 1; /* Initially, the navbar is invisible */
+    background-color: rgba(0, 0, 0, 0);
+    /* Start with fully transparent background */
+    opacity: 1;
+    /* Initially, the navbar is invisible */
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Black fade effect when scrolled */
 .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.7) !important;  /* Semi-transparent black */
-    opacity: 1; /* Fully visible */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for more effect */
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Semi-transparent black */
+    opacity: 1;
+    /* Fully visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for more effect */
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgba(255, 255, 255) !important;
-    transition:  0.4s;
+    transition: 0.4s;
 
 
 }
@@ -789,30 +976,38 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 
 /* Style for the scrollbar */
 ::-webkit-scrollbar {
-    width: 16px;  /* Set the width of the scrollbar */
-    height: 156px; /* Set the height of the scrollbar (for horizontal scrollbar) */
+    width: 16px;
+    /* Set the width of the scrollbar */
+    height: 156px;
+    /* Set the height of the scrollbar (for horizontal scrollbar) */
 }
 
 /* Scrollbar track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
-    background-color: transparent; /* You can customize this if needed */
-    border-radius: 10px; /* Border radius for the track */
+    background-color: transparent;
+    /* You can customize this if needed */
+    border-radius: 10px;
+    /* Border radius for the track */
 }
 
 /* Scrollbar thumb (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-    background-color: #B90000;  /* Set scrollbar thumb color */
-    border-radius: 10px;  /* Border radius for the thumb */
-    border: 3px solid #fff;  /* Optional: Adds a white border around the thumb */
+    background-color: #B90000;
+    /* Set scrollbar thumb color */
+    border-radius: 10px;
+    /* Border radius for the thumb */
+    border: 3px solid #fff;
+    /* Optional: Adds a white border around the thumb */
 }
 
 /* Hover effect for the scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #D90000; /* Darker color on hover */
+    background-color: #D90000;
+    /* Darker color on hover */
 }
 
- /* Customize the navbar-toggler icon */
- .custom-toggler .navbar-toggler-icon {
+/* Customize the navbar-toggler icon */
+.custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
@@ -820,41 +1015,47 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 .custom-toggler {
     border-color: #B20909 !important;
 }
+
 @keyframes slides {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     to {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
-  }
-  .logos h2{
+}
+
+.logos h2 {
     color: #000000;
     font-size: 60px;
-    font-family: var(--main-font); /* Use the main font family */
-text-align: center;
-margin-top: 80px;
+    font-family: var(--main-font);
+    /* Use the main font family */
+    text-align: center;
+    margin-top: 80px;
 
-margin-bottom: 80px;
-  }
-  .logos {
+    margin-bottom: 80px;
+}
+
+.logos {
     margin-top: 125px;
     background-color: #FFFFFF;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-  }
-  
-  .logos:before, .logos:after {
+}
+
+.logos:before,
+.logos:after {
     position: absolute;
     top: 0;
     content: '';
     width: 250px;
     height: 100%;
     z-index: 2;
-  }
-  
-  /* .logos:before {
+}
+
+/* .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
   }
@@ -863,19 +1064,36 @@ margin-bottom: 80px;
     right: 0;
     background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
   } */
-  
-  .logo_items {
+
+.logo_items {
     display: inline-block;
     animation: 35s slides infinite linear;
-  }
-  
-  .logos:hover .logo_items  {
+}
+
+.logos:hover .logo_items {
     animation-play-state: paused;
-  }
-  
-  .logo_items img{
+}
+
+.logo_items img {
     margin-bottom: 52px;
     height: 100px;
     margin-right: 90px !important;
 
-  }
+}
+
+
+.macbook-bg {
+    background: url('../imgs/backbook-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}.macbook-slider-section {
+    background: url('../imgs/backbook-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
