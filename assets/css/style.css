@@ -18,7 +18,7 @@
 }
 body{
     background-color:#f1f1f1 ;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 /* Root variables */
 :root {
@@ -497,6 +497,21 @@ footer ul li a{
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .logos h2{
+       
+        font-size: 30px !important;
+
+      }
+      .logos {
+        margin-top: 125px;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+      }
+    .navbar{
+        background-color: #000000 !important;
+    }
     #macbook-slider {
         position: absolute;
         top: 20%; /* Adjust to fit screen area */
@@ -551,6 +566,15 @@ footer ul li a{
     }
     .fix{
         margin-right: 30px !important;
+    }
+    .left .textL{
+        transform: translateY(-631%) !important;
+    }
+    @media (max-width: 768px) {
+        .TextR, .textL {
+            font-size: 4vw !important;
+          
+        }
     }
 }
 
@@ -786,3 +810,72 @@ transform: translateY(-40%); /* Adjust this value to move the text upwards */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #D90000; /* Darker color on hover */
 }
+
+ /* Customize the navbar-toggler icon */
+ .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Add border color */
+.custom-toggler {
+    border-color: #B20909 !important;
+}
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  .logos h2{
+    color: #000000;
+    font-size: 60px;
+    font-family: var(--main-font); /* Use the main font family */
+text-align: center;
+margin-top: 80px;
+
+margin-bottom: 80px;
+  }
+  .logos {
+    margin-top: 125px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  /* .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  } */
+  
+  .logo_items {
+    display: inline-block;
+    animation: 35s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items  {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img{
+    margin-bottom: 52px;
+    height: 100px;
+    margin-right: 90px !important;
+
+  }
