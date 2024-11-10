@@ -756,7 +756,7 @@ footer ul li a {
 .parallax-section {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 150vh;
 }
 
 .parallax-background {
