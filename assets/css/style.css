@@ -756,7 +756,7 @@ footer ul li a {
 .parallax-section {
     position: relative;
     overflow: hidden;
-    height: 150vh;
+    height: 100vh;
 }
 
 .parallax-background {
@@ -1082,14 +1082,15 @@ footer ul li a {
 }
 
 
-.macbook-bg {
+.macbook-slider-section {
     background: url('../imgs/backbook-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 
-}.macbook-slider-section {
+}
+.macbook-bg {
     background: url('../imgs/backbook-bg.png');
     background-size: cover;
     background-position: center;
