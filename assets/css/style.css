@@ -756,7 +756,7 @@ footer ul li a {
 .parallax-section {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height:145vh;
 }
 
 .parallax-background {
@@ -847,7 +847,7 @@ footer ul li a {
     /* Large width to cover background */
     height: 2000px;
     /* Large height to cover background */
-    top: 30%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -858,20 +858,37 @@ footer ul li a {
 .parallax-bottom-img {
     position: absolute;
     bottom: 0;
-    top: 40%;
+    top: 50%;
     left: 0;
-    width: 100%;
     height: 100%;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0; /* Remove any space between images */
+    overflow: hidden;
 }
 
+.parallax-bottom-img img:first-child {
+    position:  relative !important;
+    right: 20%;
+    z-index: 9999;
+
+}
+    
+
+.parallax-bottom-img img:last-child {
+    position:  relative !important;
+
+    left: 15%;
+}
 .parallax-bottom-img img {
-    width: 50%;
-    height: auto;
+
+
+    width: 100%; /* Each image takes up the full width */
+    height: 100%;
     object-fit: cover;
 }
+
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {

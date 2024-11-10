@@ -56,8 +56,8 @@ window.addEventListener('scroll', function () {
 
     // Parallax effect for the bottom cloud images
     const cloudsImgs = document.querySelectorAll('.parallax-bottom-img img');
-    cloudsImgs[0].style.transform = `translateY(${-scrollPosition * 0.5}px)`; // Left cloud
-    cloudsImgs[1].style.transform = `translateY(${-scrollPosition * 0.3}px)`; // Right cloud moves faster
+    cloudsImgs[0].style.transform = `translateY(${-scrollPosition * 1.1}px)`; // Left cloud
+    cloudsImgs[1].style.transform = `translateY(${-scrollPosition * 0.4}px)`; // Right cloud moves faster
 });
 
 
